@@ -1,0 +1,92 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">🛡️</div>
+      <div>
+        <h1>Fraud Detection</h1>
+        <p class="subtitle">Real-time Protection Active</p>
+      </div>
+    </div>
+
+    <!-- Status Section -->
+    <div class="status-section">
+      <div class="status-badge active">
+        <span class="status-dot"></span>
+        Protection Enabled
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" id="urlsScanned">0</div>
+        <div class="stat-label">URLs Scanned</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="threatsBlocked">0</div>
+        <div class="stat-label">Threats Blocked</div>
+      </div>
+    </div>
+
+    <!-- Quick Analysis Section -->
+    <div class="analysis-section">
+      <h3>Quick Analysis</h3>
+      <input 
+        type="text" 
+        id="quickAnalyzeInput" 
+        placeholder="Enter URL to analyze..."
+        class="input-field"
+      >
+      <button id="analyzeBtn" class="btn-primary">
+        <span id="btnText">Analyze</span>
+        <span id="btnLoader" class="loader" style="display: none;"></span>
+      </button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result-section" style="display: none;">
+      <div class="result-header">
+        <span id="resultEmoji">✅</span>
+        <span id="resultLevel">SAFE</span>
+      </div>
+      <div class="result-score">
+        Risk Score: <strong id="resultScore">0</strong>/100
+      </div>
+      <div class="result-bar">
+        <div id="resultBarFill" class="result-bar-fill" style="width: 0%"></div>
+      </div>
+      <div class="result-message" id="resultMessage">
+        No threats detected
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button id="openDashboard" class="btn-secondary">
+        Open Dashboard
+      </button>
+      <button id="rescanPage" class="btn-secondary">
+        Rescan Current Page
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>ITS Engineering College</p>
+      <p class="version">v1.0.0 • CSE Project 2025-26</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
