@@ -36,7 +36,7 @@ function setupEventListeners() {
   
   // Open dashboard
   document.getElementById('openDashboard').addEventListener('click', () => {
-    chrome.tabs.create({ url: 'https://fraud-detection-system-bw1y.vercel.app/' });
+    chrome.tabs.create({ url: 'https://fraud-detection-system-five.vercel.app/' });
   });
   
   // Rescan page
