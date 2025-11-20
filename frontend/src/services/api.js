@@ -5,7 +5,7 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://fraud-detection-system-production-1758.up.railway.app/';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
