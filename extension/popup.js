@@ -4,7 +4,7 @@
  * Handles extension popup interface
  */
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://fraud-detection-system-production-1758.up.railway.app/api';
 
 // Load stats on popup open
 document.addEventListener('DOMContentLoaded', () => {
