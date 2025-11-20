@@ -15,7 +15,7 @@
   ],
   
   "host_permissions": [
-    "http://localhost:8000/*",
+    "https://fraud-detection-system-production-1758.up.railway.app/*",
     "https://*/*",
     "http://*/*"
   ],

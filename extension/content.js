@@ -7,7 +7,7 @@
 console.log('🛡️ Fraud Detection Content Script Loaded');
 
 // API Configuration
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://fraud-detection-system-production-1758.up.railway.app/api';
 
 // Track analyzed links to avoid duplicate checks
 const analyzedLinks = new Set();
