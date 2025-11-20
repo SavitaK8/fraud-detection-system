@@ -41,4 +41,4 @@ COPY . .
 EXPOSE $PORT
 
 # start command (Railway will provide PORT env automatically)
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
